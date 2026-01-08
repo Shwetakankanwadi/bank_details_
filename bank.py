@@ -2,10 +2,10 @@
 def bank_details(account_number, holder_name, account_type, balance):
     print("\nBank Account Details")
     print("---------------------")
-    print("Account Number :", account_number)
-    print("Account Holder :", holder_name)
-    print("Account Type   :", account_type)
-    print("Balance        :", balance)
+    print("Account Number :",account_number)
+    print("Account Holder :",holder_name)
+    print("Account Type   :",account_type)
+    print("Balance        :",balance)
 
 acc_no = input("Enter account number: ")
 name = input("Enter account holder name: ")
