@@ -1,16 +1,15 @@
-def bank_details(acc_no, name, acc_type, bal):
-    return {
-        "acc_no": acc_no,
-        "name": name,
-        "acc_type": acc_type,
-        "bal": bal
-    }
 
-if __name__ == "__main__":
-    acc_no = int(input("Enter account number: "))
-    name = input("Enter name: ")
-    acc_type = input("Enter account type: ")
-    bal = int(input("Enter balance: "))
+def bank_details(acc_no, name, acc_type, balance):
+    print("\nBank Details")
+    print("-------------")
+    print("Account Number :", acc_no)
+    print("Account Holder :", name)
+    print("Account Type   :", acc_type)
+    print("Balance        :", balance)
 
-    result = bank_details(acc_no, name, acc_type, bal)
-    print(result)
+acc_no = input("Enter account number: ")
+name = input("Enter account holder name: ")
+acc_type = input("Enter account type: ")
+balance = input("Enter balance: ")
+
+bank_details(acc_no, name, acc_type, balance)
