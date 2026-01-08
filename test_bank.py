@@ -6,14 +6,11 @@ class BankAccount:
         self.account_number = account_number
 
     def validate(self):
-        return (
-            bool(self.name)
-            and self.balance >= 0
-            and self.account_type in ["Savings", "Current"]
-            and len(self.account_number) == 10
-        )
+        if self.name and self.balance >= 0 and self.account_type in ["Savings", "Current"] and len(self.account_number) == 10:
+            return True
+        else:
+            return False
 
 
-if __name__ == "__main__":
-    acc = BankAccount("Shweta", 5000, "Savings", "1234567890")
-    print(acc.validate())
+acc = BankAccount("Shweta", 5000, "Savings", "1234567890")
+print(acc.validate())
