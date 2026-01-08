@@ -8,6 +8,6 @@ def test_bank_details():
         "bal": 800000
     }
 
-    result = bank_details(101, "Shweta", "canara", 80000)
+    result = bank_details(101, "Shweta", "canara", 800000)
 
     assert result == expected
